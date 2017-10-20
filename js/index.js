@@ -4,10 +4,12 @@ $( "li" ).click(function() {
   alert(ParentDiv);
   if(ParentDiv === 0){
     $(".HelloContent").show();
+   }else{
+    if(ParentDiv > 1){
+      $(".HolaContent").show();
+    }else {
+      $(".HiContent").show();
+    }
    }
-  if(ParentDiv > 1){
-    $(".HolaContent").show();
-  }else {
-    $(".HiContent").show();
-  }
+  
 });
