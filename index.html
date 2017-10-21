@@ -1,41 +1,97 @@
 <!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>9CV9 menu</title>
-  
-  
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-      <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
 
-  
-</head>
+    <style>
+      .red
+      {
+        color: white;
+        background-color: red;
+      }
+      .green
+      {
+        color: white;
+        background-color: green;
+      }
+      .blue
+      {
+        color: white;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        	<br />
+        	<div id="Accordion" role="tablist" aria-multiselectable="true">
+        		<div class="panel panel-default">
+        			<div class="panel-heading" role="tab" id="HeadingOne">
+        				<h4 class="panel-title">
+        					<a data-toggle="collapse" data-parent="#Accordion" href="#CollapseOne" aria-expanded="true" aria-controls="CollapseOne">
+        				 Item 1
+        					</a>
+        				</h4>
+        			</div>
 
-<body>
-  <div class="menu"/>
-    <ul>
-      <li>
-        <span>Hello</span>
-        <div class="HelloContent">
-          This is Hello content
+        			<div id="CollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="HeadingOne">
+        				Content Item 1 
+        			</div>
+        		</div>
+
+        		<div class="panel panel-default">
+        			<div class="panel-heading" role="tab" id="HeadingTwo">
+        				<h4 class="panel-title">
+        					<a class="collapsed" data-toggle="collapse" data-parent="#Accordion" href="#CollapseTwo" aria-expanded="false" aria-controls="CollapseTwo">
+        					Item 2
+        					</a>
+        				</h4>
+        			</div>
+
+        			<div id="CollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="HeadingTwo">
+        				Content Item 2
+        			</div>
+        		</div>
+
+        		<div class="panel panel-default">
+        			<div class="panel-heading" role="tab" id="HeadingThree">
+        				<h4 class="panel-title">
+        					<a class="collapsed" data-toggle="collapse" data-parent="#Accordion" href="#CollapseThree" aria-expanded="false" aria-controls="CollapseThree">
+        				  Item 3
+        					</a>
+        				</h4>
+        			</div>
+        			<div id="CollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="HeadingThree">
+        				content Item 3
+        			</div>
+            </div>
+            <div class="panel panel-default">
+        			<div class="panel-heading" role="tab" id="HeadingThree">
+        				<h4 class="panel-title">
+        					<a class="collapsed" data-toggle="collapse" data-parent="#Accordion" href="#CollapseFour" aria-expanded="false" aria-controls="CollapseFour">
+        				  Item 4
+        					</a>
+        				</h4>
+        			</div>
+        			<div id="CollapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="HeadingFour">
+        				content Item 4
+        			</div>
+        		</div>
+        	</div>
         </div>
-      </li>
-      <li><span>Hi</span>
-        <div class="HiContent">
-          This is Hi content
-        </div></li>
-      <li>
-        <span>Hola</span>
-        <div class="HolaContent">
-          This is Hola content
-        </div></li>
-    </ul>
+      </div>
+    </div>
 
-</div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-
-    <script  src="js/index.js"></script>
-
-</body>
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  </body> 
 </html>
